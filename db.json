@@ -1,0 +1,21 @@
+{
+  "feedback": [
+    {
+      "text": "text 1 coming from json servver",
+      "rating": 8,
+      "id": "9891"
+    },
+    {
+      " id": 2,
+      "rating": 10,
+      "text": "text 1 coming from json server",
+      "id": "d374"
+    },
+    {
+      " id": 3,
+      "rating": 7,
+      "text": "text 1 coming from json server",
+      "id": "736b"
+    }
+  ]
+}

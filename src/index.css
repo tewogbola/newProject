@@ -1,0 +1,180 @@
+body{
+  background-color: greenyellow;
+}
+.container{
+ max-width: 50%;
+ margin: auto;
+ padding: 0 20px;
+}
+
+.card{
+  background-color: blue;
+  padding: 40px 30px;
+  border-radius: 25px;
+  margin: 30px 0;
+  position: relative;
+  border: 2px solid rgb(252, 17, 146);
+}
+.num-display{
+  position: relative;
+  bottom: 45px;
+  left: -35px;
+  background-color: deeppink;
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+}
+.card .close{
+  position: absolute;
+  left: 390px;
+  bottom: 95px;
+  border: none;
+  font-size: 1rem;
+  color: pink;
+  background-color: blue;
+
+}
+/*styling the edit button*/
+.card .edit{
+  position: absolute;
+  left: 490px;
+  bottom: 100px;
+  border: none;
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+}
+/* styling feedbackstart */
+.feedstats{
+  display: flex;
+  justify-content: space-between;
+}
+/* styling feedback form */
+.input-group{
+  margin-top: 5%;
+}
+.input-group input{
+  width: 70%;
+  height: 5vh;
+  border-radius: 0.3rem;
+  border: 2px solid gray;
+}
+.input-group button{
+cursor: pointer;
+margin-left: 5%;
+}
+
+/* styling button component */
+.btn{
+  padding: 5px 10px;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary{
+  background-color: black;
+  color: white;
+}
+.btn-secondary{
+  background-color: pink;
+  color: black;
+}
+.btn-tertiary{
+  background-color: purple;
+  color: white;
+}
+.btn:disabled{
+  background-color:gray ;
+  color: white;
+  cursor: not-allowed;
+}
+/* styling rating */
+ul{
+  list-style: none;
+}
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0 40px;
+}
+.rating li{
+  position: relative;
+  bottom: 10px;
+  left: -5px;
+  background-color: rgb(177, 107, 16);
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  margin: 5px;
+}
+.rating li label{
+  position: absolute;
+  top: 50%;  
+  left: 50%;
+  width: 50px;
+  height: 50% ;
+  padding: 15px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+}
+.rating li:hover,
+.num-display{
+background-color: deeppink;
+color: white;
+}
+[type='radio']{
+  opacity: 0;
+}
+[type='radio']:checked ~ label{
+  background-color: deeppink;
+  color: white;
+}
+
+  @media screen and (max-width: 650px){
+  .card .close{
+    position: absolute;
+    left: 160px;
+    bottom: 114px;
+    border: none;
+    font-size: 1rem;
+    color: pink;
+    background-color: rgb(15, 240, 71)
+  }
+  .card{
+    background-color: rgb(15, 240, 71);
+    
+     margin: 20px;  
+    border: 2px solid goldenrod;
+  }
+  .num-display{
+    bottom: 45px;
+  }
+  
+} 
+.active{
+  background-color: black;
+}
+
+
+
+
+/* @media screen and (min-width: 1281px){
+.card .close{
+  position: absolute;
+  left: 150px;
+  bottom: 130px;
+  border: none;
+  font-size: 1rem;
+  color: pink;
+  background-color: antiquewhite;
+} 
+
+}  */
